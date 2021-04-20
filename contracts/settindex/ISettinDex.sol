@@ -1,6 +1,6 @@
 pragma solidity ^0.6.0;
 
-interface IDEX {
+interface  ISettinDex {
     event Swaped(address indexed sender, address[] path, uint256 supply_amount, uint256 target_amount);
     event AddedLiquidity(address indexed sender, address indexed tokenA, address indexed tokenB, uint256 maxAmountA, uint256 maxAmountB);
     event RemovedLiquidity(address indexed sender, address indexed tokenA, address indexed tokenB, uint256 remove_share);
