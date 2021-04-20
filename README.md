@@ -121,7 +121,7 @@ function transferMaintainer(address contract_address, address new_maintainer) pu
 function getPrice(address token) public view returns (uint256, uint256);
 ```
 ### On-chain Automatic Scheduler
-- SchedulerCall contract address: `0x0000000000000000000000000000000000000802`
+- ScheduleCall contract address: `0x0000000000000000000000000000000000000802`
 ```
 // Scheduler call the contract.
 // Returns a boolean value indicating whether the operation succeeded.
