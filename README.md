@@ -147,5 +147,3 @@ function getLiquidity(address tokenA, address tokenB) public view returns (uint2
 // Returns (target_amount)
 function swapWithExactSupply(address tokenA, address tokenB, uint256 supplyAmount, uint256 minTargetAmount) public view returns (uint256)
 ```
-## DeFi Contracts (Coming Soon)
-These contracts will make setheum's DeFi primitives (stablecoin, staking derivative, and SettinDEX) available in SEVM.
