@@ -1,7 +1,7 @@
 {
-  "name": "@setheum-network/contracts",
+  "name": "@setheum-labs/contracts",
   "version": "1.0.13",
-  "description": "setheumNetwork Smart Contract library for Solidity",
+  "description": "Setheum Smart Contract library for Solidity",
   "files": [
     "**/*.js",
     "**/*.ts",
@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/setheumNetwork/sevm-predeployed-contracts.git"
+    "url": "git+https://github.com/Setheum-Labs/sevm-predeployed-contracts.git"
   },
   "keywords": [
     "smart",
     "solidity",
     "contracts",
-    "setheumNetwork"
+    "SetheumNetwork"
   ],
-  "author": "",
+  "author": "Setheum Labs",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/setheumNetwork/sevm-predeployed-contracts/issues"
+    "url": "https://github.com/Setheum-Labs/sevm-predeployed-contracts/issues"
   },
-  "homepage": "https://github.com/setheumNetwork/sevm-predeployed-contracts"
+  "homepage": "https://github.com/Setheum-Labs/sevm-predeployed-contracts"
 }

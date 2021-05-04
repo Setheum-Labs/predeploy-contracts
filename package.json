@@ -1,9 +1,9 @@
 {
-  "name": "sevm-predeployed-contracts",
+  "name": "evm-predeployed-contracts",
   "version": "0.1.0",
   "main": "index.js",
-  "repository": "https://github.com/setheumNetwork/sevm-predeployed-contracts.git",
-  "author": "Shaopeng Wang <spxwang@gmail.com>",
+  "repository": "https://github.com/Setheum-Labs/sevm-predeployed-contracts.git",
+  "author": "Setheum Labs <https://setheum.xyz>",
   "license": "Apache-2.0",
   "scripts": {
     "generate-bytecode": "node generate/generate.js",
@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "3.0.0",
-    "ethers": "^5.0.32",
     "handlebars": "^4.7.7"
   },
   "devDependencies": {
