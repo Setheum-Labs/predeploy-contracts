@@ -11,7 +11,7 @@ const exec = util.promisify(childProcess.exec);
 
 // Ethereum precompiles
 // 0 - 0x400
-// setheum precompiles
+// Setheum precompiles
 // 0x400 - 0x800
 // Predeployed system contracts (except Mirrored ERC20)
 // 0x800 - 0x1000
@@ -81,7 +81,7 @@ const generate = async () => {
   bytecodes.push(['Schedule', address(PREDEPLOY_ADDRESS_START, 2), schedule]);
 
   // add DEX bytecodes
-  const { deployedBytecode: SetheumDex } = require(`../build/contractsdex.json`);
+  const { deployedBytecode: SetheumDex } = require(`../build/contracts/SetheumDex.json`);
   bytecodes.push(['SetheumDex', address(PREDEPLOY_ADDRESS_START, 3), SetheumDex]);
 
   await writeFile(bytecodesFile, JSON.stringify(bytecodes, null, 2), 'utf8');
