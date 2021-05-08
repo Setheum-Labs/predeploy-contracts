@@ -3,7 +3,6 @@ const path = require('path');
 const util = require('util');
 const childProcess = require('child_process');
 const Handlebars = require("handlebars");
-const ethers = require("ethers");
 
 const copyFile = util.promisify(fs.copyFile);
 const readFile = util.promisify(fs.readFile);
@@ -24,9 +23,7 @@ const PREDEPLOY_ADDRESS_START = 0x800;
 const MIRRORED_TOKENS_ADDRESS_START = 0x01000000;
 
 function address(start, offset) {
-  const address = (Number(start)+ Number(offset)).toString(16).padStart(40,0);
-  // Returns address as a Checksum Address.
-  return ethers.utils.getAddress(address);
+  return "0x" + (Number(start)+ Number(offset)).toString(16).padStart(40,0);
 }
 
 const generate = async () => {
@@ -56,8 +53,8 @@ const generate = async () => {
       .replace(/contract ERC20 is IERC20/g, `contract ${symbol}ERC20 is IERC20`)
       .replace(/import "\.\/MultiCurrency.sol";/g, `import "../token/MultiCurrency.sol";`)
       .replace(/import "\.\/IMultiCurrency.sol";/g, `import "../token/IMultiCurrency.sol";`)
-      // The currencyid is u8, it needs to be converted to uint256, and it needs to satisfy `v[31] = currencyId`.
-      .replace(/uint256 private constant _currencyId = 0xffff;/, `uint256 private constant _currencyId = ${"0x" + currencyId.toString(16)};`)
+      // The currencyid is u8, it needs to be converted to uint256, and it needs to satisfy `v [29] == 0 && v [31] == 0`, so shift 8 bits to the left.
+      .replace(/uint256 private constant _currencyId = 0xffff;/, `uint256 private constant _currencyId = ${"0x" + (currencyId << 8).toString(16)};`)
       .replace(/string private constant _name = "TEMPLATE";/g, `string private constant _name = "${name}";`)
       .replace(/string private constant _symbol = "TEMP";/g, `string private constant _symbol = "${symbol}";`)
       .replace(/uint8 private constant _decimals = 0;/g, `uint8 private constant _decimals = ${decimals};`);
@@ -84,8 +81,8 @@ const generate = async () => {
   bytecodes.push(['Schedule', address(PREDEPLOY_ADDRESS_START, 2), schedule]);
 
   // add DEX bytecodes
-  const { deployedBytecode: dex } = require(`../build/contracts/DEX.json`);
-  bytecodes.push(['DEX', address(PREDEPLOY_ADDRESS_START, 3), dex]);
+  const { deployedBytecode: SetheumDex } = require(`../build/contracts/SetheumDex.json`);
+  bytecodes.push(['SetheumDex', address(PREDEPLOY_ADDRESS_START, 3), SetheumDex]);
 
   await writeFile(bytecodesFile, JSON.stringify(bytecodes, null, 2), 'utf8');
 

@@ -1,5 +1,5 @@
-# SEVM-Predeployed-Contracts
-`Setheum Ethereum Virtual Machine` (SEVM) Predeployed Contracts
+# S-EVM-Predeployed-Contracts
+`Setheum Ethereum Virtual Machine` (S-EVM) Predeployed Contracts
 
 Generate bytecode for predeployment of ERC20 smart contracts in Setheum.
 
@@ -34,7 +34,7 @@ The token list for ERC20 smart contracts is in `./resources/example_tokens.json`
 These ERC20 contracts make native and cross-chain tokens available inside Setheum EVM.
 - DNAR contract address: `0x0000000000000000000000000000000001000000`.
 - JUSD contract address: `0x0000000000000000000000000000000001000001`.
-- SDEX contract address: `0x0000000000000000000000000000000001000002`.
+- SETN contract address: `0x0000000000000000000000000000000001000002`.
 
 - NEOM contract address: `0x0000000000000000000000000000000001000080`.
 - JEUR contract address: `0x0000000000000000000000000000000001000081`.
@@ -121,7 +121,7 @@ function transferMaintainer(address contract_address, address new_maintainer) pu
 function getPrice(address token) public view returns (uint256, uint256);
 ```
 ### On-chain Automatic Scheduler
-- ScheduleCall contract address: `0x0000000000000000000000000000000000000802`
+- SchedulerCall contract address: `0x0000000000000000000000000000000000000802`
 ```
 // Scheduler call the contract.
 // Returns a boolean value indicating whether the operation succeeded.
@@ -136,8 +136,8 @@ function cancelCall(bytes memory task_id) public returns (bool);
 function rescheduleCall(uint256 min_delay, bytes memory task_id) public returns (bool);
 ```
 
-### SettinDEX
-- SettinDEX contract address: `0x0000000000000000000000000000000000000803`
+### SetheumDex
+- SetheumDex contract address: `0x0000000000000000000000000000000000000803`
 ```
 // Get liquidity of the currency_id_a and currency_id_b.
 // Returns (liquidity_a, liquidity_b)
