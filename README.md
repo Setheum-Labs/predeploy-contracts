@@ -1,5 +1,6 @@
-# S-EVM-Predeployed-Contracts
-`Setheum Ethereum Virtual Machine` (SEVM) Contracts
+# Predeploy-Contracts
+Predeploy `Setheum Ethereum Virtual Machine` (SEVM) Contracts
+Generate bytecode for predeployment of ERC20 smart contracts in Setheum.
 
 ## 1. Build
 
