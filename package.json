@@ -1,6 +1,6 @@
 {
   "name": "@setheum-labs/predeploy-contracts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": "https://github.com/Setheum-Labs/predeploy-contracts.git",
   "author": "Setheum Labs <https://setheum.xyz>",
