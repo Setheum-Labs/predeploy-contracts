@@ -22,7 +22,7 @@ The token list for ERC20 smart contracts is in `./resources/example_tokens.json`
 
 ```
 {
-  "symbol": "DNAR",
+  "symbol": "DRAM",
   "address": "0x0000000000000000000000000000000001000000"
 }
 ```
@@ -32,8 +32,8 @@ The token list for ERC20 smart contracts is in `./resources/example_tokens.json`
 ## ERC20 Contracts
 These ERC20 contracts make native and cross-chain tokens available inside SetheumEVM (SEVM).
 
-- DNAR contract address: `0x0000000000000000000000000000000001000000`.
-- DRAM contract address: `0x0000000000000000000000000000000001000001`.
+- DRAM contract address: `0x0000000000000000000000000000000001000000`.
+- DNAR contract address: `0x0000000000000000000000000000000001000001`.
 - SETR contract address: `0x0000000000000000000000000000000001000002`.
 - SETUSD contract address: `0x0000000000000000000000000000000001000003`.
 - SETEUR contract address: `0x0000000000000000000000000000000001000004`.
@@ -43,8 +43,8 @@ These ERC20 contracts make native and cross-chain tokens available inside Setheu
 
 - RENBTC contract address:  `0x0000000000000000000000000000000001000121`.
 
-- LP_DNAR_SETR contract address: `0x0000000000000000000000010000000000000002`.
-- LP_DRAM_SETR contract address: `0x0000000000000000000000010000000100000002`.
+- LP_DRAM_SETR contract address: `0x0000000000000000000000010000000000000002`.
+- LP_DNAR_SETR contract address: `0x0000000000000000000000010000000100000002`.
 - LP_SETUSD_SETR contract address: `0x0000000000000000000000010000000300000002`.
 - LP_SETEUR_SETR contract address: `0x0000000000000000000000010000000400000002`
 - LP_SETGBP_SETR contract address: `0x0000000000000000000000010000000500000002`.
