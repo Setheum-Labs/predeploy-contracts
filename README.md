@@ -22,7 +22,7 @@ The token list for ERC20 smart contracts is in `./resources/example_tokens.json`
 
 ```
 {
-  "symbol": "SETHEUM",
+  "symbol": "SETM",
   "address": "0x0000000000000000000000000000000001000000"
 }
 ```
@@ -32,7 +32,7 @@ The token list for ERC20 smart contracts is in `./resources/example_tokens.json`
 ## ERC20 Contracts
 These ERC20 contracts make native and cross-chain tokens available inside SetheumEVM (SEVM).
 
-- SETHEUM contract address: `0x0000000000000000000000000000000001000000`.
+- SETM contract address: `0x0000000000000000000000000000000001000000`.
 - DNAR contract address: `0x0000000000000000000000000000000001000001`.
 - SETR contract address: `0x0000000000000000000000000000000001000002`.
 - SETEUR contract address: `0x0000000000000000000000000000000001000003`.
@@ -40,7 +40,7 @@ These ERC20 contracts make native and cross-chain tokens available inside Setheu
 
 - RENBTC contract address:  `0x0000000000000000000000000000000001000121`.
 
-- LP_SETHEUM_SETUSD contract address: `0x0000000000000000000000010000000000000004`.
+- LP_SETM_SETUSD contract address: `0x0000000000000000000000010000000000000004`.
 - LP_DNAR_SETUSD contract address: `0x0000000000000000000000010000000100000004`.
 - LP_SETR_SETUSD contract address: `0x0000000000000000000000010000000200000004`
 - LP_SETEUR_SETUSD contract address: `0x0000000000000000000000010000000300000004`
