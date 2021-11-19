@@ -72,7 +72,6 @@ contract DEX is IDEX {
     view
     override
     returns (uint256) {
-        require(path.length >= 2 && path.length <= 3, "DEX: token path over the limit");
         for (uint i = 0; i < path.length; i++) {
             require(path[i] != address(0), "DEX: token is zero address");
         }
@@ -104,7 +103,6 @@ contract DEX is IDEX {
     view
     override
     returns (uint256) {
-        require(path.length >= 2 && path.length <= 3, "DEX: token path over the limit");
         for (uint i = 0; i < path.length; i++) {
             require(path[i] != address(0), "DEX: token is zero address");
         }
@@ -135,7 +133,6 @@ contract DEX is IDEX {
     public
     override
     returns (bool) {
-        require(path.length >= 2 && path.length <= 3, "DEX: token path over the limit");
         for (uint i = 0; i < path.length; i++) {
             require(path[i] != address(0), "DEX: token is zero address");
         }
@@ -167,7 +164,6 @@ contract DEX is IDEX {
     public
     override
     returns (bool) {
-        require(path.length >= 2 && path.length <= 3, "DEX: token path over the limit");
         for (uint i = 0; i < path.length; i++) {
             require(path[i] != address(0), "DEX: token is zero address");
         }
