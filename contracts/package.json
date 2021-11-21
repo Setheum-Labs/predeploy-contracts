@@ -1,6 +1,6 @@
 {
   "name": "@setheum-labs/contracts",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Setheum Smart Contract library for Solidity",
   "files": [
     "**/*.js",
