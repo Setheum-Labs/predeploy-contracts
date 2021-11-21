@@ -172,4 +172,4 @@ function removeLiquidity(address tokenA, address tokenB, uint256 removeShare) ex
 ```
 
 ## DeFi Contracts (Coming Soon)
-These contracts will make Setheum's DeFi primitives (SetMint, SERP, SetPay) available in SetheumEVM (SEVM).
+These contracts will make Setheum's DeFi primitives (SERP, DexAggregator) available in SetheumEVM (SEVM).
