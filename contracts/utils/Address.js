@@ -35,7 +35,6 @@ module.exports = {
   LP_SERP_SETR,
   LP_DNAR_SETR,
   LP_HELP_SETR,
-  
   Token,
   StateRent,
   Oracle,
