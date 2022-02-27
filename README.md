@@ -179,3 +179,6 @@ function removeLiquidity(address tokenA, address tokenB, uint256 removeShare) ex
 
 ## DeFi Contracts (Coming Soon)
 These contracts will make Setheum's DeFi primitives (SetMint, HighEnd LaunchPad, Al-Ethaar) available in SetheumEVM (SEVM).
+
+## Bridge Contracts (Coming Soon)
+These conracts will enable bridging between EVM Compatible Chains and Setheum (ie. Setheum-Ethereum Bridge) using [chainbridge-solidity](https://github.com/ChainSafe/chainbridge-solidity).
